@@ -1,5 +1,7 @@
 $(window).ready(function(){
 
+  console.log('ran');
+
   var letters = $('.letter');
   $(letters[0]).addClass('active');
   setButtonHeight();
