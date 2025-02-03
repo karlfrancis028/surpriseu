@@ -1,0 +1,81 @@
+body, html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url('./img.jpg');
+}
+
+div.wrapper {
+  font-family: 'Proxima Nova';
+  width: 100%;
+}
+
+.cursive {
+  font-family: 'Dancing Script';
+  font-size: 1.25em;
+}
+
+.forward {
+  cursor: pointer;
+  text-align: center;
+}
+
+.letter {
+  display: none;
+  max-width: 100%;
+  border-radius: 1em;
+  position: relative;
+  padding: 1em 2em;
+  overflow: hidden;
+  margin: 2em;
+}
+
+.letter:nth-of-type(odd) {
+  background-color: rgba(232, 133, 135);
+}
+
+.letter:nth-of-type(even) {
+  background-color: rgba(214, 183, 232);
+}
+
+.letter.active {
+  display: block;
+}
+
+.letter div {
+  width: 100%;
+}
+
+.letter .body,
+.letter .writer,
+.letter .cursive {
+  z-index: 5;
+}
+
+.body {
+  font-family: "Poppins", serif;
+  font-size: 0.8em;
+  line-height: 1.75em;
+}
+
+.writer {
+  white-space: pre;
+  margin-top: .5em;
+  font-family: 'Dancing Script';
+}
+
+.forward {
+  font-family: "Poppins", serif;
+  color: white;
+}
+
+.cursive,
+.writer {
+  font-size: 1.5em;
+}
+
+.writer:before {
+  content: "Love always,\A";
+}
